@@ -10,20 +10,20 @@ const GroupChatPage = ({ event, onBack }) => {
     <div className="h-screen w-screen flex flex-col bg-[#F4F6FB] font-sans relative overflow-hidden">
       
       {/* --- HEADER ROSE --- */}
-      <div className="w-full bg-[#D1466F] pt-6 pb-12 flex-shrink-0 z-0">
+      <div className="w-full bg-[#D1466F] pt-1 pb-12 flex-shrink-0 z-0">
         <div className="flex justify-between items-center px-4 mt-2 mb-4 text-white">
           <div className="flex items-center gap-3">
             <button onClick={onBack} className="p-1 active:scale-90 transition-transform">
-              <img src="/fleche-retour.svg" className="w-4 h-4" alt="Retour" />
+              <img src="/fleche-retour-white.svg" className="w-4 h-4" alt="Retour" />
             </button>
             <div className="flex items-center gap-2">
               <span className="border border-white/40 bg-white/10 px-3 py-1 rounded-full text-[10px] font-medium tracking-wide">Musique</span>
               <h1 className="font-bold text-lg leading-none">{event.title}</h1>
             </div>
           </div>
-          <div className="w-6 h-6 rounded-full border border-white/40 flex items-center justify-center text-[10px]">
-            <img src="/information.svg" className="w-4 h-4" alt="information" />
-          </div>
+          <button className="w-5 h-7 rounded-full border border-white/40 bg-white/10 flex items-center justify-center active:scale-90 transition-transform">
+            <span className="text-white text-xs font-serif italic font-bold">i</span>
+          </button>
         </div>
 
         <div className="flex items-center pl-8">
